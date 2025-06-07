@@ -61,9 +61,10 @@ python manage.py migrate
 
 Set the timerange that you want to populate your DB with and then run the script to populate your database with data 
 from the open source API:
-
+NOTE: There is already data pre-saved as json available under weather/data/weather_data_2024-01-01_2024-12-31.json 
+which will be used by default. If you want to fetch data from the public API you need to delete it.
 ```sh
-python weather/database_helper.py
+python -m weather.database_helper
 ```
 
 **API used:**
