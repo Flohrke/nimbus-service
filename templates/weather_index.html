@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nimbus - Weather Service</title>
+</head>
+<body>
+<h1>Welcome to the Nimbus - Weather Service!</h1>
+
+<h2>Available Years:</h2>
+<ul>
+    {% for year in years %}
+    <li>{{ year }}</li>
+    {% empty %}
+    <li>No years available.</li>
+    {% endfor %}
+</ul>
+<h2>Available Cities:</h2>
+<ul>
+    {% for city in cities %}
+    <li>{{ city }}</li>
+    {% empty %}
+    <li>No cities available.</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
